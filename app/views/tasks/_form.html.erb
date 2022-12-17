@@ -1,0 +1,17 @@
+<%= form_for(task) do |f| %>
+  <div class="form_group">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="form_group">
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+  </div>
+  <div class="form_group">
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+  </div>
+  <div class="form_group">
+    <%= f.submit class:'btn btn-primary' %>
+  </div>
+<% end %>
